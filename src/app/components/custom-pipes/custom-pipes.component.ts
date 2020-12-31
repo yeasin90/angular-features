@@ -11,5 +11,23 @@ export class CustomPipesComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  title = 'pipeApp';
+  persons = [
+    {
+      id: 1,
+      name: 'David Beckham',
+      gender: 0
+    },
+    {
+      id: 2,
+      name: 'Kate Winslet',
+      gender: 1
+    },
+    {
+      id: 3,
+      name: 'Cristiano Ronaldo',
+      gender: 0
+    }
+  ]
 
 }

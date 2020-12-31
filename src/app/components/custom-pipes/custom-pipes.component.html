@@ -1,1 +1,14 @@
-<p>custom-pipes works!</p>
+<div class="container">
+  <table border="1">
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Gender</th>
+    </tr>
+    <tr *ngFor="let person of persons">
+      <td>{{ person.id }}</td>
+      <td>{{ person.name | genderPipe: person.gender }}</td>
+      <td>{{ person.gender }}</td>
+    </tr>
+  </table>
+</div>
