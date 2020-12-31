@@ -52,5 +52,16 @@
       </mat-expansion-panel-header>
       <div class="container"><app-parent3></app-parent3></div>
     </mat-expansion-panel>
+    <mat-expansion-panel
+      (opened)="panelOpenState = true"
+      (closed)="panelOpenState = false"
+    >
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Two way data binding (using NgModel)
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div class="container"><app-two-way></app-two-way></div>
+    </mat-expansion-panel>
   </mat-accordion>
 </div>
