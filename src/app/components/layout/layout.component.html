@@ -18,5 +18,39 @@
       </mat-expansion-panel-header>
       <app-custom-pipes></app-custom-pipes>
     </mat-expansion-panel>
+    <mat-expansion-panel
+      (opened)="panelOpenState = true"
+      (closed)="panelOpenState = false"
+    >
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Component inter communication (Parent-Child) - using @Input decorator
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div class="container"><app-parent1></app-parent1></div>
+    </mat-expansion-panel>
+    <mat-expansion-panel
+      (opened)="panelOpenState = true"
+      (closed)="panelOpenState = false"
+    >
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Component inter communication (Child-Parent) - using
+          @Output+EventEmitter
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div class="container"><app-parent2></app-parent2></div>
+    </mat-expansion-panel>
+    <mat-expansion-panel
+      (opened)="panelOpenState = true"
+      (closed)="panelOpenState = false"
+    >
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Component inter communication - using @ViewChild decorator
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div class="container"><app-parent3></app-parent3></div>
+    </mat-expansion-panel>
   </mat-accordion>
 </div>
