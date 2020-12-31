@@ -6,11 +6,15 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppMaterialModule } from './modules/app-material/app-material.module';
 import { LayoutComponent } from './components/layout/layout.component';
+import { CustomDirectiveComponent } from './components/custom-directive/custom-directive.component';
+import { CustomPipesComponent } from './components/custom-pipes/custom-pipes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LayoutComponent
+    LayoutComponent,
+    CustomDirectiveComponent,
+    CustomPipesComponent
   ],
   imports: [
     BrowserModule,
