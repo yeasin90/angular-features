@@ -9,6 +9,7 @@ import { LayoutComponent } from './components/layout/layout.component';
 import { CustomDirectiveComponent } from './components/custom-directive/custom-directive.component';
 import { CustomPipesComponent } from './components/custom-pipes/custom-pipes.component';
 import { RoundBlockDirective } from './components/custom-directive/round-block.directive';
+import { GenderPipePipe } from './components/custom-pipes/gender-pipe.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { RoundBlockDirective } from './components/custom-directive/round-block.d
     LayoutComponent,
     CustomPipesComponent,
     CustomDirectiveComponent,
-    RoundBlockDirective
+    RoundBlockDirective,
+    GenderPipePipe
   ],
   imports: [
     BrowserModule,
