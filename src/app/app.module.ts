@@ -8,13 +8,15 @@ import { AppMaterialModule } from './modules/app-material/app-material.module';
 import { LayoutComponent } from './components/layout/layout.component';
 import { CustomDirectiveComponent } from './components/custom-directive/custom-directive.component';
 import { CustomPipesComponent } from './components/custom-pipes/custom-pipes.component';
+import { RoundBlockDirective } from './components/custom-directive/round-block.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     LayoutComponent,
+    CustomPipesComponent,
     CustomDirectiveComponent,
-    CustomPipesComponent
+    RoundBlockDirective
   ],
   imports: [
     BrowserModule,
