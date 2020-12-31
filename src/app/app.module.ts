@@ -16,6 +16,8 @@ import { Parent2Component } from './components/communication/child-parent/parent
 import { Child2Component } from './components/communication/child-parent/child2/child2.component';
 import { Parent3Component } from './components/communication/view-child/parent3/parent3.component';
 import { Child3Component } from './components/communication/view-child/child3/child3.component';
+import { TwoWayComponent } from './components/data-binding/two-way/two-way.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,13 +32,15 @@ import { Child3Component } from './components/communication/view-child/child3/ch
     Parent2Component,
     Child2Component,
     Parent3Component,
-    Child3Component
+    Child3Component,
+    TwoWayComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    AppMaterialModule
+    AppMaterialModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
