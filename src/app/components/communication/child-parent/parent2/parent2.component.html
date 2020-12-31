@@ -1,0 +1,5 @@
+<div class="p-3 mb-2 bg-primary text-white">
+  <p>This is Parent</p>
+  <p>From Child : {{ message }}</p>
+</div>
+<app-child2 (event)="receivedMessage($event)"></app-child2>
