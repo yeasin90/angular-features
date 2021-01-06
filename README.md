@@ -1,5 +1,6 @@
-# Prj
+# Angular features in Web UI
 
+Whenever I learn something new, I like to implement a small demo with it. 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
 
 ## Development server
